@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= f_name %>'s <%= title %> Certificate</title>
+    <!-- Primary Meta Tags -->
+    <title><%= f_name %>'s <%= title %> Results | View Certificate</title>
+    <meta
+      name="title"
+      content="<%= f_name %>'s <%= title %> Results | View Certificate"
+    />
+    <meta
+      name="description"
+      content="View and download <%= f_name %>'s <%= title %> performance report in PDF format. Get insights, scores, and ranking."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://careerjupiter.com/test/report?uid=<%=userId%>&tid=<%=testId%>&report_type=<%=type%>"
+    />
+    <meta
+      property="og:title"
+      content="<%= f_name %>'s <%= title %> Results | View Certificate"
+    />
+    <meta
+      property="og:description"
+      content="View and download <%= f_name %>'s <%= title %> <%=main_category%> <%=sub_category%> <%=sub%> performance report in PDF format. Get insights, scores, and ranking."
+    />
+    <meta
+      property="og:image"
+      content="https://certificate.careerjupiter.com/certificate.png"
+    />
+    <meta property="og:site_name" content="Career Jupiter Test" />
+    <meta
+      property="og:pdf"
+      content="https://careerjupiter.com/test/report?uid=<%=userId%>&tid=<%=testId%>&report_type=<%=type%>"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="<%= f_name %>'s <%= title %> Results | View Certificate"
+    />
+    <meta
+      name="twitter:description"
+      content="View and download <%= f_name %>'s <%= title %> <%=main_category%> <%=sub_category%> <%=sub%> performance report in PDF format. Get insights, scores, and ranking."
+    />
+    <meta
+      name="twitter:image"
+      content="https://certificate.careerjupiter.com/certificate.png"
+    />
+    <meta
+      name="twitter:url"
+      content="https://careerjupiter.com/test/report?uid=<%=userId%>&tid=<%=testId%>&report_type=<%=type%>"
+    />
+  </head>
+  <body>
+    <script>
+      window.location.replace(
+        "https://careerjupiter.com/test/report?uid=<%=userId%>&tid=<%=testId%>&report_type=<%=type%>"
+      );
+    </script>
+  </body>
+</html>
